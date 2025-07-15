@@ -21,6 +21,40 @@
   --button-text: #ffffff;
 }
 
+/* --- SNAKE GAME RETRO MINIMALISTIC STYLES --- */
+.snakegame-outer {
+  min-height: 100vh;
+  background: #fff;
+  color: #222;
+  font-family: 'IBM Plex Mono', 'Fira Mono', Consolas, monospace;
+}
+.score-bar {
+  transition: background 0.11s, color 0.11s;
+}
+.controls-bar button:disabled {
+  opacity: 0.45 !important;
+  filter: grayscale(0.2);
+  cursor: not-allowed;
+}
+kbd {
+  background: #e9ecef;
+  border-radius: 4px;
+  padding: 1.5px 6px;
+  margin: 0 2px;
+  font-size: 13px;
+  border: 1px solid #bcd;
+  font-family: inherit;
+  font-weight: 800;
+  color: #388e3c;
+  box-shadow: 0 1.1px 0 #fff, 0 2.5px 7.5px #ddd3;
+}
+@media (max-width: 670px) {
+  .snakegame-outer h1 { font-size: 1.36rem; }
+  .score-bar { font-size: 0.99rem; }
+  .controls-bar button, .controls-bar input { font-size: 1em; padding: 10px 15px; }
+}
+=======
+
 .App {
   text-align: center;
   background-color: var(--bg-primary);
